@@ -1,65 +1,65 @@
 [
     {
       "id": 1,
-      "name": "Software Development",
+      "dept": "Software Development",
       "designations": [
-        {"id": 1, "name": "Software Engineer"},
-        {"id": 2, "name": "Senior Software Engineer"},
-        {"id": 3, "name": "Software Architect"}
+        {"id": 1, "dsgn": "Software Engineer"},
+        {"id": 2, "dsgn": "Senior Software Engineer"},
+        {"id": 3, "dsgn": "Software Architect"}
       ]
     },
     {
       "id": 2,
-      "name": "IT Management",
+      "dept": "IT Management",
       "designations": [
-        {"id": 4, "name": "IT Manager"},
-        {"id": 5, "name": "IT Director"},
-        {"id": 6, "name": "System Administrator"}
+        {"id": 4, "dsgn": "IT Manager"},
+        {"id": 5, "dsgn": "IT Director"},
+        {"id": 6, "dsgn": "System Administrator"}
       ]
     },
     {
       "id": 3,
-      "name": "Application Development",
+      "dept": "Application Development",
       "designations": [
-        {"id": 7, "name": "Application Developer"},
-        {"id": 8, "name": "Application Analyst"},
-        {"id": 9, "name": "Application Architect"}
+        {"id": 7, "dsgn": "Application Developer"},
+        {"id": 8, "dsgn": "Application Analyst"},
+        {"id": 9, "dsgn": "Application Architect"}
       ]
     },
     {
       "id": 4,
-      "name": "Web Development",
+      "dept": "Web Development",
       "designations": [
-        {"id": 10, "name": "Web Developer"},
-        {"id": 11, "name": "Frontend Developer"},
-        {"id": 12, "name": "Backend Developer"}
+        {"id": 10, "dsgn": "Web Developer"},
+        {"id": 11, "dsgn": "Frontend Developer"},
+        {"id": 12, "dsgn": "Backend Developer"}
       ]
     },
     {
       "id": 5,
-      "name": "Account Management",
+      "dept": "Account Management",
       "designations": [
-        {"id": 13, "name": "Account Manager"},
-        {"id": 14, "name": "Account Executive"},
-        {"id": 15, "name": "Account Coordinator"}
+        {"id": 13, "dsgn": "Account Manager"},
+        {"id": 14, "dsgn": "Account Executive"},
+        {"id": 15, "dsgn": "Account Coordinator"}
       ]
     },
     {
       "id": 6,
-      "name": "Support Management",
+      "dept": "Support Management",
       "designations": [
-        {"id": 16, "name": "Support Manager"},
-        {"id": 17, "name": "Customer Support Specialist"},
-        {"id": 18, "name": "Technical Support Engineer"}
+        {"id": 16, "dsgn": "Support Manager"},
+        {"id": 17, "dsgn": "Customer Support Specialist"},
+        {"id": 18, "dsgn": "Technical Support Engineer"}
       ]
     },
     {
       "id": 7,
-      "name": "Marketing",
+      "dept": "Marketing",
       "designations": [
-        {"id": 19, "name": "Marketing Manager"},
-        {"id": 20, "name": "Marketing Coordinator"},
-        {"id": 21, "name": "Digital Marketing Specialist"}
+        {"id": 19, "dsgn": "Marketing Manager"},
+        {"id": 20, "dsgn": "Marketing Coordinator"},
+        {"id": 21, "dsgn": "Digital Marketing Specialist"}
       ]
     }
   ]
