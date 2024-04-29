@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1595290293434-555d42427e84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXw5NDUyNDk0fHxlbnwwfHx8fHw%3D",
+        "name": "John Maya",
+        "dsgn": "Software Engineer",
+        "desc": "Experienced software developer",
+        "date": "1 April 2024",
+        "ottype": "Normal day OT 1.5x",
+        "othours": 2,
+        "project": "CRM System", 
+        "status": "new", 
+        "appBy": "Jane Smith"
+    }
+]

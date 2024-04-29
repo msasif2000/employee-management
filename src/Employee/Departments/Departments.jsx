@@ -69,7 +69,7 @@ const Departments = () => {
                         {/* head */}
                         <thead>
                             <tr className="bg-bg1 text-sm font-bold">
-                                <th>No</th>
+                                <th>#</th>
                                 <th>DEPARTMENT NAME</th>
                                 <th>ACTION</th>
                             </tr>
@@ -96,7 +96,7 @@ const Departments = () => {
                                                 </svg>
                                             </button>
                                             {showMenu === index && (
-                                                <div className="absolute left-8 bg-white rounded-md shadow-lg origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                                <div className="absolute right-12 bg-white rounded-md shadow-lg origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                                         <a href="#edit-dept" onClick={openEditModal} className="block px-4 py-2 text-sm text-gray-700 hover:bg-ic1" role="menuitem">Edit</a>
                                                         <a href="#delete-dept" onClick={openDeleteModal} className="block px-4 py-2 text-sm text-gray-700 hover:bg-ic1" role="menuitem">Delete</a>

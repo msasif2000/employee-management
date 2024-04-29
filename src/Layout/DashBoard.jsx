@@ -24,7 +24,7 @@ const DashBoard = () => {
     return (
         <div>
             <div className="md:flex">
-                <div className="lg:max-w-[18rem] xl:max-w-[20rem] 2xl:w-[22rem] border-r">
+                <div className="lg:max-w-[18rem] xl:max-w-[20rem] 2xl:w-[22rem] border-r bg-[#FFF8E1]">
                     {/* === Mobile Menu */}
                     <div className="dash navbar-start lg:hidden">
                         <div className="dropdown">
@@ -55,9 +55,9 @@ const DashBoard = () => {
                     </div>
 
                     {/* === Large Screen Menu */}
-                    <div className="dash hidden lg:flex lg:flex-col lg:justify-between min-h-screen  lg:sticky  lg:top-0 lg:inset-x-0 lg:z-20 ">
+                    <div className="dash hidden lg:flex lg:flex-col lg:justify-between min-h-screen  lg:sticky  lg:top-0 lg:inset-x-0 lg:z-20 w-full">
                         <div>
-                            <h3 className="text-3xl font-bold text-center text-txt2 mt-1 pt-1">
+                            <h3 className="text-3xl font-bold text-center text-txt2 mt-1 pt-1 px-2">
                                 Dash<span className="text-txt1">board</span>
                             </h3>
                             <div className="divider mt-[0.7rem]"></div>
@@ -76,10 +76,13 @@ const DashBoard = () => {
                     </div>
                 </div>
 
-                <div className="md:flex-1 bg-bgk">
+                <div className="xl:max-w-screen-lg 2xl:max-w-screen-xl lg:max-w-screen-md mx-auto">
                     <Navbar />
-                    <div className="px-6 pb-6">
-                        <Outlet></Outlet>
+                    <div className="md:flex-1 bg-bgk">
+
+                        <div className="px-4 pb-6 ">
+                            <Outlet></Outlet>
+                        </div>
                     </div>
                 </div>
             </div>
