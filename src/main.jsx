@@ -8,6 +8,10 @@ import {
 } from "react-router-dom";
 import DashBoard from './Layout/DashBoard.jsx';
 import Departments from "./Employee/Departments/Departments"
+import Designation from './Employee/Designation/Designation.jsx';
+import TimeSheet from './Employee/TimeSheet/TimeSheet.jsx';
+import ShiftSchedule from './Employee/ShiftSchedule/ShiftSchedule.jsx';
+import Overtime from './Employee/Overtime/Overtime.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +25,22 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/departments",
         element: <Departments />,
+      }, 
+      {
+        path: "/dashboard/designations",
+        element: <Designation />,
+      },
+      {
+        path: "/dashboard/timeSheet",
+        element: <TimeSheet />,
+      },
+      {
+        path: "/dashboard/shiftSchedule",
+        element: <ShiftSchedule />,
+      },
+      {
+        path: "/dashboard/overtime",
+        element: <Overtime />,
       }
     ]
   }

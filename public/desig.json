@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "dID": 1,
+        "dept": "Software Development",
+        "dsgn": "Software Engineer"
+    },
+    {
+        "id": 2,
+        "dID": 2,
+        "dept": "IT Management",
+        "dsgn": "IT Manager"
+    },
+    {
+        "id": 3,
+        "dID": 2,
+        "dept": "IT Management",
+        "dsgn": "System Administrator"
+    },
+    {
+        "id": 4,
+        "dID": 3,
+        "dept": "Application Development",
+        "dsgn": "Application Developer"
+    },
+    {
+        "id": 5,
+        "dID": 3,
+        "dept": "Application Development",
+        "dsgn": "Application Analyst"
+    },
+    {
+        "id": 6,
+        "dID": 4,
+        "dept": "Web Development",
+        "dsgn": "Web Developer"
+    },
+    {
+        "id": 7,
+        "dID": 4,
+        "dept": "Web Development",
+        "dsgn": "Frontend Developer"
+    },
+    {
+        "id": 8,
+        "dID": 4,
+        "dept": "Web Development",
+        "dsgn": "Backend Developer"
+    },
+    {
+        "id": 9,
+        "dID": 5,
+        "dept": "Account Management",
+        "dsgn": "Account Manager"
+    },
+    {
+        "id": 10,
+        "dID": 6,
+        "dept": "Support Management",
+        "dsgn": "Customer Support Specialist"
+    }
+]
