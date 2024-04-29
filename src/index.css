@@ -6,6 +6,8 @@
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
+
+  background-color: #FFF8E1;
 }
 
 .dash li {
@@ -17,7 +19,7 @@ body {
 }
 .dash a.active {
   background-color: white !important;
-  color: #4869dd !important;
+  color: #7D5D00 !important;
   font-weight: 800 !important;
 }
 

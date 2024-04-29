@@ -1,4 +1,6 @@
+import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import { NavLink, Outlet } from "react-router-dom";
+import Navbar from "../Components/Navbar/Navbar";
 
 
 const DashBoard = () => {
@@ -22,7 +24,7 @@ const DashBoard = () => {
     return (
         <div>
             <div className="md:flex">
-                <div className="lg:w-2/11 xl:max-w-[20rem] 2xl:w-[22rem] border-r">
+                <div className="lg:max-w-[18rem] xl:max-w-[20rem] 2xl:w-[22rem] border-r">
                     {/* === Mobile Menu */}
                     <div className="dash navbar-start lg:hidden">
                         <div className="dropdown">
@@ -55,8 +57,8 @@ const DashBoard = () => {
                     {/* === Large Screen Menu */}
                     <div className="dash hidden lg:flex lg:flex-col lg:justify-between min-h-screen  lg:sticky  lg:top-0 lg:inset-x-0 lg:z-20 ">
                         <div>
-                            <h3 className="text-3xl font-bold text-center">
-                                Dash<span className="text-[#af914a]">board</span>
+                            <h3 className="text-3xl font-bold text-center text-txt2 mt-1 pt-1">
+                                Dash<span className="text-txt1">board</span>
                             </h3>
                             <div className="divider mt-[0.7rem]"></div>
                             <ul className="menu text-xl ">{Links}</ul>
@@ -66,18 +68,16 @@ const DashBoard = () => {
                             <ul className="menu text-xl">
                                 <li>
                                     <NavLink to="/">
-                                      Home
+                                        <BsFillArrowLeftSquareFill /> Home
                                     </NavLink>
                                 </li>
                             </ul>
-                            <h6 className="text-center capitalize text-xs text-gray-300 border-t-2 mx-4">
-                             Dashboard
-                            </h6>
                         </div>
                     </div>
                 </div>
 
-                <div className="md:flex-1 bg-[#FAFAFA]">
+                <div className="md:flex-1 bg-bgk">
+                    <Navbar />
                     <div className="px-6 pb-6">
                         <Outlet></Outlet>
                     </div>
