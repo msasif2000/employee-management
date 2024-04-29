@@ -6,8 +6,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Departments from './Employee/Departments.jsx';
 import DashBoard from './Layout/DashBoard.jsx';
+import Departments from "./Employee/Departments/Departments"
 
 const router = createBrowserRouter([
   {

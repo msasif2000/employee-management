@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "name": "Software Development",
+      "designations": [
+        {"id": 1, "name": "Software Engineer"},
+        {"id": 2, "name": "Senior Software Engineer"},
+        {"id": 3, "name": "Software Architect"}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "IT Management",
+      "designations": [
+        {"id": 4, "name": "IT Manager"},
+        {"id": 5, "name": "IT Director"},
+        {"id": 6, "name": "System Administrator"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Application Development",
+      "designations": [
+        {"id": 7, "name": "Application Developer"},
+        {"id": 8, "name": "Application Analyst"},
+        {"id": 9, "name": "Application Architect"}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Web Development",
+      "designations": [
+        {"id": 10, "name": "Web Developer"},
+        {"id": 11, "name": "Frontend Developer"},
+        {"id": 12, "name": "Backend Developer"}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Account Management",
+      "designations": [
+        {"id": 13, "name": "Account Manager"},
+        {"id": 14, "name": "Account Executive"},
+        {"id": 15, "name": "Account Coordinator"}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Support Management",
+      "designations": [
+        {"id": 16, "name": "Support Manager"},
+        {"id": 17, "name": "Customer Support Specialist"},
+        {"id": 18, "name": "Technical Support Engineer"}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Marketing",
+      "designations": [
+        {"id": 19, "name": "Marketing Manager"},
+        {"id": 20, "name": "Marketing Coordinator"},
+        {"id": 21, "name": "Digital Marketing Specialist"}
+      ]
+    }
+  ]
