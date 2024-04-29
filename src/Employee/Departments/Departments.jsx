@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DashHeader from "../../Components/DashHeader/DashHeader";
+import DataNumber from "../../Components/DataNumber/DataNumber";
 
 const Departments = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -7,6 +8,7 @@ const Departments = () => {
     const [deleteModal, setDeleteModal] = useState(false);
     const [editDept, setEditDept] = useState('');
     const [depts, setDepts] = useState([]);
+
     const openModal = () => {
         setIsModalOpen(true);
     };
@@ -53,6 +55,9 @@ const Departments = () => {
                     </a>
                 </div>
             </div>
+
+            {/*data selection*/}
+            <DataNumber />
 
             {/* Add Department Modal */}
             {isModalOpen && (
