@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1595290293434-555d42427e84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXw5NDUyNDk0fHxlbnwwfHx8fHw%3D",
+        "name": "John Maya",
+        "dsgn": "Software Engineer",
+        "desc": "Experienced software developer",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 35,
+        "project": "CRM System"
+    },
+    {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1593839686924-4b344fac3f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHw5NDUyNDk0fHxlbnwwfHx8fHw%3D",
+        "name": "Jane Smith",
+        "dsgn": "IT Manager",
+        "desc": "Skilled IT manager",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 38,
+        "project": "IT Infrastructure"
+    },
+    {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1587778082149-bd5b1bf5d3fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw5NDUyNDk0fHxlbnwwfHx8fHw%3D",
+        "name": "Michael Johnson",
+        "dsgn": "System Administrator",
+        "desc": "Certified system administrator",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 40,
+        "project": "Network Security"
+    },
+    {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1548705963-0b8edb4f90b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OHw5NDUyNDk0fHxlbnwwfHx8fHw%3D",
+        "name": "Emily Brown",
+        "dsgn": "Application Developer",
+        "desc": "Talented application developer",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 36,
+        "project": "Mobile App Development"
+    },
+    {
+        "id": 5,
+        "image": "https://images.unsplash.com/photo-1593717761902-ac814190dc8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTJ8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "David Wilson",
+        "dsgn": "Application Analyst",
+        "desc": "Analytical application analyst",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 39,
+        "project": "Data Analysis Platform"
+    },
+    {
+        "id": 6,
+        "image": "https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTR8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "Emma Davis",
+        "dsgn": "Web Developer",
+        "desc": "Creative web developer",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 40,
+        "project": "E-commerce Website"
+    },
+    {
+        "id": 7,
+        "image": "https://images.unsplash.com/photo-1592011159356-3a1f7c74e784?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTZ8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "Daniel Martinez",
+        "dsgn": "Frontend Developer",
+        "desc": "Frontend development expert",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 38,
+        "project": "UI/UX Redesign"
+    },
+    {
+        "id": 8,
+        "image": "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjZ8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "Olivia Rodriguez",
+        "dsgn": "Backend Developer",
+        "desc": "Backend development specialist",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 37,
+        "project": "Database Optimization"
+    },
+    {
+        "id": 9,
+        "image": "https://images.unsplash.com/photo-1496811278625-55d74ab26979?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MzV8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "Noah Taylor",
+        "dsgn": "Account Manager",
+        "desc": "Dedicated account manager",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 38,
+        "project": "Client Relationship"
+    },
+    {
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NDB8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "Ava Garcia",
+        "dsgn": "Customer Support Specialist",
+        "desc": "Efficient customer support specialist",
+        "date": "1 April 2024",
+        "assh": 40,
+        "hours": 40,
+        "project": "Helpdesk Support"
+    }
+]
