@@ -76,7 +76,7 @@ const DashBoard = () => {
                     </div>
                 </div>
 
-                <div className="xl:max-w-screen-lg 2xl:max-w-screen-xl lg:max-w-screen-md mx-auto">
+                <div className="xl:max-w-screen-lg 2xl:max-w-screen-xl lg:max-w-screen-md mx-auto w-full">
                     <Navbar />
                     <div className="md:flex-1 bg-bgk">
 

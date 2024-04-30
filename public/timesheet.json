@@ -8,7 +8,79 @@
         "date": "1 April 2024",
         "assh": 40,
         "hours": 35,
-        "project": "CRM System"
+        "project": "CRM System",
+        "shfts": [
+            {
+                "date1": "Sat, 1 April 2024",
+                "mst": "06:15 am",
+                "st": "08:00 am",
+                "mxs": "10:00 am",
+                "met": "01:00 pm",
+                "et": "03:30 pm",
+                "mxe": "05:00 pm",
+                "project": "CRM System"
+            },
+            {
+                "date2": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date3": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date4": "Tue, 4 April 2024",
+                "mst": "07:30 am",
+                "st": "09:00 am",
+                "mxs": "11:00 am",
+                "met": "01:00 pm",
+                "et": "04:30 pm",
+                "mxe": "06:00 pm",
+                "project": "CRM System"
+            },
+            {
+                "date5": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date6": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     },
     {
         "id": 2,
@@ -19,7 +91,79 @@
         "date": "1 April 2024",
         "assh": 40,
         "hours": 38,
-        "project": "IT Infrastructure"
+        "project": "IT Infrastructure",
+        "shfts": [
+            {
+                "date1": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date2": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date3": "Mon, 3 April 2024",
+                "mst": "08:00 am",
+                "st": "09:30 am",
+                "mxs": "11:30 am",
+                "met": "02:30 pm",
+                "et": "05:00 pm",
+                "mxe": "06:30 pm",
+                "project": "IT Infrastructure"
+            },
+            {
+                "date4": "Tue, 4 April 2024",
+                "mst": "08:15 am",
+                "st": "09:45 am",
+                "mxs": "11:45 am",
+                "met": "02:45 pm",
+                "et": "05:15 pm",
+                "mxe": "06:45 pm",
+                "project": "IT Infrastructure"
+            },
+            {
+                "date5": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date6": "Thu, 6 April 2024",
+                "mst": "07:45 am",
+                "st": "09:15 am",
+                "mxs": "11:15 am",
+                "met": "02:15 pm",
+                "et": "04:45 pm",
+                "mxe": "06:15 pm",
+                "project": "IT Infrastructure"
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     },
     {
         "id": 3,
@@ -30,7 +174,79 @@
         "date": "1 April 2024",
         "assh": 40,
         "hours": 40,
-        "project": "Network Security"
+        "project": "Network Security",
+        "shfts": [
+            {
+                "date1": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date2": "Sun, 2 April 2024",
+                "mst": "07:00 am",
+                "st": "08:30 am",
+                "mxs": "10:30 am",
+                "met": "01:30 pm",
+                "et": "04:00 pm",
+                "mxe": "05:30 pm",
+                "project": "Network Security"
+            },
+            {
+                "date3": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date4": "Tue, 4 April 2024",
+                "mst": "08:45 am",
+                "st": "10:15 am",
+                "mxs": "12:15 pm",
+                "met": "03:15 pm",
+                "et": "05:45 pm",
+                "mxe": "07:15 pm",
+                "project": "Network Security"
+            },
+            {
+                "date5": "Wed, 5 April 2024",
+                "mst": "07:30 am",
+                "st": "09:00 am",
+                "mxs": "11:00 am",
+                "met": "02:00 pm",
+                "et": "04:30 pm",
+                "mxe": "06:00 pm",
+                "project": "Network Security"
+            },
+            {
+                "date6": "Thu, 6 April 2024",
+                "mst": "08:15 am",
+                "st": "09:45 am",
+                "mxs": "11:45 am",
+                "met": "02:45 pm",
+                "et": "05:15 pm",
+                "mxe": "06:45 pm",
+                "project": "Network Security"
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     },
     {
         "id": 4,
@@ -41,7 +257,79 @@
         "date": "1 April 2024",
         "assh": 40,
         "hours": 36,
-        "project": "Mobile App Development"
+        "project": "Mobile App Development",
+        "shfts": [
+            {
+                "date1": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date2": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date3": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date4": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date5": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date6": "Thu, 6 April 2024",
+                "mst": "08:30 am",
+                "st": "10:00 am",
+                "mxs": "12:00 pm",
+                "met": "03:00 pm",
+                "et": "05:30 pm",
+                "mxe": "07:00 pm",
+                "project": "Mobile App Development"
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     },
     {
         "id": 5,
@@ -52,7 +340,79 @@
         "date": "1 April 2024",
         "assh": 40,
         "hours": 39,
-        "project": "Data Analysis Platform"
+        "project": "Data Analysis Platform",
+        "shfts": [
+            {
+                "date1": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date2": "Sun, 2 April 2024",
+                "mst": "07:00 am",
+                "st": "08:30 am",
+                "mxs": "10:30 am",
+                "met": "01:30 pm",
+                "et": "04:00 pm",
+                "mxe": "05:30 pm",
+                "project": "Data Analysis Platform"
+            },
+            {
+                "date3": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date4": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date5": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date6": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     },
     {
         "id": 6,
@@ -63,7 +423,79 @@
         "date": "1 April 2024",
         "assh": 40,
         "hours": 40,
-        "project": "E-commerce Website"
+        "project": "E-commerce Website",
+        "shfts": [
+            {
+                "date1": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date2": "Sun, 2 April 2024",
+                "mst": "07:15 am",
+                "st": "08:45 am",
+                "mxs": "10:45 am",
+                "met": "01:45 pm",
+                "et": "04:15 pm",
+                "mxe": "05:45 pm",
+                "project": "E-commerce Website"
+            },
+            {
+                "date3": "Mon, 3 April 2024",
+                "mst": "08:45 am",
+                "st": "10:15 am",
+                "mxs": "12:15 pm",
+                "met": "03:15 pm",
+                "et": "05:45 pm",
+                "mxe": "07:15 pm",
+                "project": "E-commerce Website"
+            },
+            {
+                "date4": "Tue, 4 April 2024",
+                "mst": "07:30 am",
+                "st": "09:00 am",
+                "mxs": "11:00 am",
+                "met": "02:00 pm",
+                "et": "04:30 pm",
+                "mxe": "06:00 pm",
+                "project": "E-commerce Website"
+            },
+            {
+                "date5": "Wed, 5 April 2024",
+                "mst": "08:00 am",
+                "st": "09:30 am",
+                "mxs": "11:30 am",
+                "met": "02:30 pm",
+                "et": "05:00 pm",
+                "mxe": "06:30 pm",
+                "project": "E-commerce Website"
+            },
+            {
+                "date6": "Thu, 6 April 2024",
+                "mst": "08:15 am",
+                "st": "09:45 am",
+                "mxs": "11:45 am",
+                "met": "02:45 pm",
+                "et": "05:15 pm",
+                "mxe": "06:45 pm",
+                "project": "E-commerce Website"
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     },
     {
         "id": 7,
@@ -74,39 +506,327 @@
         "date": "1 April 2024",
         "assh": 40,
         "hours": 38,
-        "project": "UI/UX Redesign"
+        "project": "UI/UX Redesign",
+        "shfts": [
+            {
+                "date1": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date2": "Sun, 2 April 2024",
+                "mst": "07:30 am",
+                "st": "09:00 am",
+                "mxs": "11:00 am",
+                "met": "02:00 pm",
+                "et": "04:30 pm",
+                "mxe": "06:00 pm",
+                "project": "UI/UX Redesign"
+            },
+            {
+                "date3": "Mon, 3 April 2024",
+                "mst": "08:15 am",
+                "st": "09:45 am",
+                "mxs": "11:45 am",
+                "met": "02:45 pm",
+                "et": "05:15 pm",
+                "mxe": "06:45 pm",
+                "project": "UI/UX Redesign"
+            },
+            {
+                "date4": "Tue, 4 April 2024",
+                "mst": "08:30 am",
+                "st": "10:00 am",
+                "mxs": "12:00 pm",
+                "met": "03:00 pm",
+                "et": "05:30 pm",
+                "mxe": "07:00 pm",
+                "project": "UI/UX Redesign"
+            },
+            {
+                "date5": "Wed, 5 April 2024",
+                "mst": "07:45 am",
+                "st": "09:15 am",
+                "mxs": "11:15 am",
+                "met": "02:15 pm",
+                "et": "04:45 pm",
+                "mxe": "06:15 pm",
+                "project": "UI/UX Redesign"
+            },
+            {
+                "date6": "Thu, 6 April 2024",
+                "mst": "08:00 am",
+                "st": "09:30 am",
+                "mxs": "11:30 am",
+                "met": "02:30 pm",
+                "et": "05:00 pm",
+                "mxe": "06:30 pm",
+                "project": "UI/UX Redesign"
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     },
     {
         "id": 8,
-        "image": "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjZ8OTQ1MjQ5NHx8ZW58MHx8fHx8",
-        "name": "Olivia Rodriguez",
-        "dsgn": "Backend Developer",
-        "desc": "Backend development specialist",
+        "image": "https://images.unsplash.com/photo-1533518463841-d62e1fc913cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTd8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "Olivia Taylor",
+        "dsgn": "Graphic Designer",
+        "desc": "Creative graphic designer",
         "date": "1 April 2024",
         "assh": 40,
         "hours": 37,
-        "project": "Database Optimization"
+        "project": "Brand Identity",
+        "shfts": [
+            {
+                "date1": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date2": "Sun, 2 April 2024",
+                "mst": "07:45 am",
+                "st": "09:15 am",
+                "mxs": "11:15 am",
+                "met": "02:15 pm",
+                "et": "04:45 pm",
+                "mxe": "06:15 pm",
+                "project": "Brand Identity"
+            },
+            {
+                "date3": "Mon, 3 April 2024",
+                "mst": "08:00 am",
+                "st": "09:30 am",
+                "mxs": "11:30 am",
+                "met": "02:30 pm",
+                "et": "05:00 pm",
+                "mxe": "06:30 pm",
+                "project": "Brand Identity"
+            },
+            {
+                "date4": "Tue, 4 April 2024",
+                "mst": "08:15 am",
+                "st": "09:45 am",
+                "mxs": "11:45 am",
+                "met": "02:45 pm",
+                "et": "05:15 pm",
+                "mxe": "06:45 pm",
+                "project": "Brand Identity"
+            },
+            {
+                "date5": "Wed, 5 April 2024",
+                "mst": "07:30 am",
+                "st": "09:00 am",
+                "mxs": "11:00 am",
+                "met": "02:00 pm",
+                "et": "04:30 pm",
+                "mxe": "06:00 pm",
+                "project": "Brand Identity"
+            },
+            {
+                "date6": "Thu, 6 April 2024",
+                "mst": "07:45 am",
+                "st": "09:15 am",
+                "mxs": "11:15 am",
+                "met": "02:15 pm",
+                "et": "04:45 pm",
+                "mxe": "06:15 pm",
+                "project": "Brand Identity"
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     },
     {
         "id": 9,
-        "image": "https://images.unsplash.com/photo-1496811278625-55d74ab26979?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MzV8OTQ1MjQ5NHx8ZW58MHx8fHx8",
-        "name": "Noah Taylor",
-        "dsgn": "Account Manager",
-        "desc": "Dedicated account manager",
+        "image": "https://images.unsplash.com/photo-1513360371667-82425f0609f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnx8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "Noah Garcia",
+        "dsgn": "UX Designer",
+        "desc": "Passionate UX designer",
         "date": "1 April 2024",
         "assh": 40,
-        "hours": 38,
-        "project": "Client Relationship"
+        "hours": 35,
+        "project": "User Experience Improvement",
+        "shfts": [
+            {
+                "date1": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date2": "Sun, 2 April 2024",
+                "mst": "08:00 am",
+                "st": "09:30 am",
+                "mxs": "11:30 am",
+                "met": "02:30 pm",
+                "et": "05:00 pm",
+                "mxe": "06:30 pm",
+                "project": "User Experience Improvement"
+            },
+            {
+                "date3": "Mon, 3 April 2024",
+                "mst": "08:15 am",
+                "st": "09:45 am",
+                "mxs": "11:45 am",
+                "met": "02:45 pm",
+                "et": "05:15 pm",
+                "mxe": "06:45 pm",
+                "project": "User Experience Improvement"
+            },
+            {
+                "date4": "Tue, 4 April 2024",
+                "mst": "07:30 am",
+                "st": "09:00 am",
+                "mxs": "11:00 am",
+                "met": "02:00 pm",
+                "et": "04:30 pm",
+                "mxe": "06:00 pm",
+                "project": "User Experience Improvement"
+            },
+            {
+                "date5": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date6": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date7": "Wed, 7 April 2024",
+                "mst": "08:00 am",
+                "st": "09:30 am",
+                "mxs": "11:30 am",
+                "met": "02:30 pm",
+                "et": "05:00 pm",
+                "mxe": "06:30 pm",
+                "project": "User Experience Improvement"
+            }
+        ]
     },
     {
         "id": 10,
-        "image": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NDB8OTQ1MjQ5NHx8ZW58MHx8fHx8",
-        "name": "Ava Garcia",
-        "dsgn": "Customer Support Specialist",
-        "desc": "Efficient customer support specialist",
+        "image": "https://images.unsplash.com/photo-1602528992250-af7b3cb7dced?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnx8OTQ1MjQ5NHx8ZW58MHx8fHx8",
+        "name": "Sophia Rodriguez",
+        "dsgn": "Software Engineer",
+        "desc": "Innovative software engineer",
         "date": "1 April 2024",
         "assh": 40,
         "hours": 40,
-        "project": "Helpdesk Support"
+        "project": "Software Development",
+        "shfts": [
+            {
+                "date1": "Sat, 1 April 2024",
+                "mst": "07:30 am",
+                "st": "09:00 am",
+                "mxs": "11:00 am",
+                "met": "02:00 pm",
+                "et": "04:30 pm",
+                "mxe": "06:00 pm",
+                "project": "Software Development"
+            },
+            {
+                "date2": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date3": "Mon, 3 April 2024",
+                "mst": "08:00 am",
+                "st": "09:30 am",
+                "mxs": "11:30 am",
+                "met": "02:30 pm",
+                "et": "05:00 pm",
+                "mxe": "06:30 pm",
+                "project": "Software Development"
+            },
+            {
+                "date4": "Tue, 4 April 2024",
+                "mst": "07:45 am",
+                "st": "09:15 am",
+                "mxs": "11:15 am",
+                "met": "02:15 pm",
+                "et": "04:45 pm",
+                "mxe": "06:15 pm",
+                "project": "Software Development"
+            },
+            {
+                "date5": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            },
+            {
+                "date6": "Thu, 6 April 2024",
+                "mst": "07:30 am",
+                "st": "09:00 am",
+                "mxs": "11:00 am",
+                "met": "02:00 pm",
+                "et": "04:30 pm",
+                "mxe": "06:00 pm",
+                "project": "Software Development"
+            },
+            {
+                "date7": "",
+                "mst": "",
+                "st": "",
+                "mxs": "",
+                "met": "",
+                "et": "",
+                "mxe": "",
+                "project": ""
+            }
+        ]
     }
 ]
