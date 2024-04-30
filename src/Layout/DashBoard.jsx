@@ -23,8 +23,9 @@ const DashBoard = () => {
     </>
     return (
         <div>
+            <Navbar />
             <div className="md:flex">
-                <div className="lg:max-w-[18rem] xl:max-w-[20rem] 2xl:w-[22rem] border-r bg-[#FFF8E1]">
+                <div className="lg:max-w-[18rem] xl:max-w-[20rem] 2xl:w-[22rem] border-r bg-black">
                     {/* === Mobile Menu */}
                     <div className="dash navbar-start lg:hidden">
                         <div className="dropdown">
@@ -57,15 +58,15 @@ const DashBoard = () => {
                     {/* === Large Screen Menu */}
                     <div className="dash hidden lg:flex lg:flex-col lg:justify-between min-h-screen  lg:sticky  lg:top-0 lg:inset-x-0 lg:z-20 w-full">
                         <div>
-                            <h3 className="text-3xl font-bold text-center text-txt2 mt-1 pt-1 px-2">
-                                Dash<span className="text-txt1">board</span>
+                            <h3 className="text-3xl font-bold text-center text-white mt-1 pt-1 px-2">
+                                Dash<span className="text-[#ff902f]">board</span>
                             </h3>
-                            <div className="divider mt-[0.7rem]"></div>
-                            <ul className="menu text-xl ">{Links}</ul>
+                            <div className="divider mt-[0.7rem] bg-white h-1/2"></div>
+                            <ul className="menu text-xl text-white">{Links}</ul>
                         </div>
                         <div>
-                            <div className="divider mx-4"></div>
-                            <ul className="menu text-xl">
+                            <div className="divider mx-4 bg-white h-1/2"></div>
+                            <ul className="menu text-xl text-white">
                                 <li>
                                     <NavLink to="/">
                                         <BsFillArrowLeftSquareFill /> Home
@@ -77,8 +78,8 @@ const DashBoard = () => {
                 </div>
 
                 <div className="xl:max-w-screen-lg 2xl:max-w-screen-xl lg:max-w-screen-md mx-auto w-full">
-                    <Navbar />
-                    <div className="md:flex-1 bg-bgk">
+
+                    <div className="md:flex-1">
 
                         <div className="px-4 pb-6 ">
                             <Outlet></Outlet>

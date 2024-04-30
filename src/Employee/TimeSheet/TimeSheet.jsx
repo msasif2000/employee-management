@@ -65,7 +65,7 @@ const TimeSheet = () => {
                     <table className="table min-w-full divide-y divide-red-500 ">
                         {/* head */}
                         <thead>
-                            <tr className="bg-bg1 text-sm font-bold">
+                            <tr className="bg-white text-sm font-bold text-black">
                                 <th>NAME</th>
                                 <th>DATE</th>
                                 <th>PROJECT</th>
@@ -78,11 +78,11 @@ const TimeSheet = () => {
                         {/* body */}
                         <tbody>
                             {timeSheet?.map((tmsh, index) => (
-                                <tr key={tmsh.id} className={index % 2 === 0 ? 'bg-ic1' : 'bg-bg1'}>
+                                <tr key={tmsh.id} className={index % 2 === 0 ? '' : 'bg-white'}>
                                     <td style={{ whiteSpace: 'nowrap' }} className="flex items-center gap-1 w-full pr-1">
                                         <img src={tmsh?.image} alt="" className="h-12 rounded-full w-12" />
                                         <span className="text-base font-bold">{tmsh.name}</span>
-                                        <span className="text-txt1">{tmsh?.dsgn}</span>
+                                        <span className="text-slate-700">{tmsh?.dsgn}</span>
                                     </td>
                                     <td style={{ whiteSpace: 'nowrap' }}>{tmsh.date}</td>
                                     <td style={{ whiteSpace: 'nowrap' }}>{tmsh.project}</td>
@@ -105,8 +105,8 @@ const TimeSheet = () => {
                                             {showMenu === index && (
                                                 <div className="absolute right-12 bg-white rounded-md shadow-lg origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                                        <a href="#edit-tmsh" onClick={openEditModal} className="block px-4 py-2 text-sm text-gray-700 hover:bg-ic1" role="menuitem">Edit</a>
-                                                        <a href="#delete-tmsh" onClick={openDeleteModal} className="block px-4 py-2 text-sm text-gray-700 hover:bg-ic1" role="menuitem">Delete</a>
+                                                        <a href="#edit-tmsh" onClick={openEditModal} className="block px-4 py-2 text-sm text-gray-700 " role="menuitem">Edit</a>
+                                                        <a href="#delete-tmsh" onClick={openDeleteModal} className="block px-4 py-2 text-sm text-gray-700 " role="menuitem">Delete</a>
                                                     </div>
                                                 </div>
                                             )}
@@ -122,9 +122,9 @@ const TimeSheet = () => {
             {/* Add Department Modal */}
             {isModalOpen && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Add Today Work Details</h2>
+                            <h2 className="text-2xl font-bold text-black">Add Today Work Details</h2>
                             <a href="#close" onClick={closeModal}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -133,7 +133,7 @@ const TimeSheet = () => {
                         </div>
                         <form className="mt-4">
                             <div className="mb-4 w-1/2">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Project</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Project</label>
                                 <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                     <option value="1">IT Infrastructure</option>
                                     <option value="2">Network Security</option>
@@ -143,30 +143,30 @@ const TimeSheet = () => {
                             </div>
                             <div className="flex items-center justify-evenly gap-8 mt-4">
                                 <div>
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Deadline</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Deadline</label>
                                     <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div>
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Total Hours</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Total Hours</label>
                                     <input type="text" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div>
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Remaining Hours</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Remaining Hours</label>
                                     <input type="text" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="flex items-center justify-evenly gap-8 mt-4">
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Date</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Date</label>
                                     <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Hours</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Hours</label>
                                     <input type="text" name="deptName" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Description</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Description</label>
                                 <textarea name="desc" id="desc" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="flex justify-center mt-4">
@@ -179,9 +179,9 @@ const TimeSheet = () => {
             {/* Edit  Modal */}
             {editModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Edit Department</h2>
+                            <h2 className="text-2xl font-bold text-black">Edit Department</h2>
                             <a href="#close" onClick={closeEditModal}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -190,7 +190,7 @@ const TimeSheet = () => {
                         </div>
                         <form className="mt-4">
                             <div className="mb-4 w-1/2">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Project</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Project</label>
                                 <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                     <option value="1">IT Infrastructure</option>
                                     <option value="2">Network Security</option>
@@ -200,30 +200,30 @@ const TimeSheet = () => {
                             </div>
                             <div className="flex items-center justify-evenly gap-8 mt-4">
                                 <div>
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Deadline</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Deadline</label>
                                     <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div>
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Total Hours</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Total Hours</label>
                                     <input type="text" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div>
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Remaining Hours</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Remaining Hours</label>
                                     <input type="text" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="flex items-center justify-evenly gap-8 mt-4">
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Date</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Date</label>
                                     <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Hours</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Hours</label>
                                     <input type="text" name="deptName" id="deptName" defaultValue={editDept} required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Description</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Description</label>
                                 <textarea name="desc" id="desc" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="flex justify-center mt-4">
@@ -237,9 +237,9 @@ const TimeSheet = () => {
             {/* Delete Department Modal */}
             {deleteModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 w-1/3 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 w-1/3 rounded-lg">
                         <div className="">
-                            <h2 className="text-2xl font-bold text-txt2">Delete Department?</h2>
+                            <h2 className="text-2xl font-bold text-black">Delete Department?</h2>
                             <div className="flex items-center justify-center gap-12 pt-8">
                                 <a href="#close" onClick={closeDeleteModal}>
                                     <button className="btn btn-sm bg-white border-1 border-bs2 hover:bg-sl1 hover:text-white">Delete</button>

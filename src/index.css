@@ -7,19 +7,19 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 
-  background-color: #FFEEC2; /*#FFF8E1*/
+  background-color:#ece8e8; /*#FFF8E1*/
 }
 
 .dash li {
   font-size: 16px;
 }
 .dash a:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
+  /* background-color: rgba(0, 0, 0, 0) !important; */
   text-decoration: underline;
 }
 .dash a.active {
-  background-color: white !important;
-  color: #7D5D00 !important;
+  background-color: black !important;
+  color: #ff902f !important;
   font-weight: 800 !important;
 }
 

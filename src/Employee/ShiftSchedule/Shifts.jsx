@@ -66,7 +66,7 @@ const Shifts = () => {
                     <table className="table min-w-full divide-y divide-red-500 ">
                         {/* head */}
                         <thead>
-                            <tr className="bg-bg1 text-sm font-bold">
+                            <tr className="bg-white text-sm font-bold text-black">
                                 <th>#</th>
                                 <th>SHIFT NAME</th>
                                 <th>MIN START TIME</th>
@@ -83,7 +83,7 @@ const Shifts = () => {
                         {/* body */}
                         <tbody>
                             {timeSheet?.map((tmsh, index) => (
-                                <tr key={tmsh.id} className={index % 2 === 0 ? 'bg-ic1' : 'bg-bg1'}>
+                                <tr key={tmsh.id} className={index % 2 === 0 ? '' : 'bg-white'}>
                                     <td>{tmsh?.id}</td>
                                     <td style={{ whiteSpace: 'nowrap' }}>
                                         <span className="text-base font-bold">{tmsh.name}</span>
@@ -96,7 +96,7 @@ const Shifts = () => {
                                     <td style={{ whiteSpace: 'nowrap' }}>{tmsh.mxe}</td>
                                     <td style={{ whiteSpace: 'nowrap' }}>{tmsh.bt}</td>
                                     <td>
-                                        <select name="active" id="1" className="bg-bs1 rounded">
+                                        <select name="active" id="1" className="bg-sl1 text-white p-1 rounded">
                                             <option value="1">Active</option>
                                             <option value="2">Inactive</option>
                                         </select>
@@ -118,8 +118,8 @@ const Shifts = () => {
                                             {showMenu === index && (
                                                 <div className="absolute right-12 bg-white rounded-md shadow-lg origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                                        <a href="#edit-tmsh" onClick={openEditModal} className="block px-4 py-2 text-sm text-gray-700 hover:bg-ic1" role="menuitem">Edit</a>
-                                                        <a href="#delete-tmsh" onClick={openDeleteModal} className="block px-4 py-2 text-sm text-gray-700 hover:bg-ic1" role="menuitem">Delete</a>
+                                                        <a href="#edit-tmsh" onClick={openEditModal} className="block px-4 py-2 text-sm text-gray-700 " role="menuitem">Edit</a>
+                                                        <a href="#delete-tmsh" onClick={openDeleteModal} className="block px-4 py-2 text-sm text-gray-700 " role="menuitem">Delete</a>
                                                     </div>
                                                 </div>
                                             )}
@@ -135,9 +135,9 @@ const Shifts = () => {
             {/* Add Department Modal */}
             {isModalOpen && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Add Today Work Details</h2>
+                            <h2 className="text-2xl font-bold text-black">Add Today Work Details</h2>
                             <a href="#close" onClick={closeModal}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -146,39 +146,39 @@ const Shifts = () => {
                         </div>
                         <form className="mt-4">
                             <div className="w-full">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Shift Name</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Shift Name</label>
                                 <input type="text" name="name" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Min Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Min Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Max Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Max Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Min End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Min End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Max End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Max End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="w-1/2 mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Break Time</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Break Time</label>
                                 <input type="time" name="deptName" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
 
@@ -204,9 +204,9 @@ const Shifts = () => {
             {/* Edit  Modal */}
             {editModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 w-1/3 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 w-1/3 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Edit Shifts</h2>
+                            <h2 className="text-2xl font-bold text-black">Edit Shifts</h2>
                             <a href="#close" onClick={closeEditModal}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -216,7 +216,7 @@ const Shifts = () => {
                         <form className="mt-4">
                             <div className="flex gap-8">
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Department</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Department</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">IT Infrastructure</option>
@@ -226,7 +226,7 @@ const Shifts = () => {
                                     </select>
                                 </div>
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Select Employee</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Select Employee</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">John Maya</option>
@@ -238,11 +238,11 @@ const Shifts = () => {
                             </div>
                             <div className="flex gap-8 mt-4">
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Date</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Date</label>
                                     <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Shfts</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Shfts</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">10:30 Shift</option>
@@ -253,34 +253,34 @@ const Shifts = () => {
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Min Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Min Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Max Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Max Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Min End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Min End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Max End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Max End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="w-1/2 mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Break Time</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Break Time</label>
                                 <input type="time" name="deptName" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
 
@@ -307,9 +307,9 @@ const Shifts = () => {
             {/* Delete Department Modal */}
             {deleteModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 w-1/3 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 w-1/3 rounded-lg">
                         <div className="">
-                            <h2 className="text-2xl font-bold text-txt2">Delete Shift?</h2>
+                            <h2 className="text-2xl font-bold text-black">Delete Shift?</h2>
                             <div className="flex items-center justify-center gap-12 pt-8">
                                 <a href="#close" onClick={closeDeleteModal}>
                                     <button className="btn btn-sm bg-white border-1 border-bs2 hover:bg-sl1 hover:text-white">Delete</button>

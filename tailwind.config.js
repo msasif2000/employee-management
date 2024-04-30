@@ -11,8 +11,8 @@ export default {
         bgk: "#FFEEC2",
         txt1: "#7D5D00",
         txt2: "#361600", 
-        sl1: "#B18500", 
-        sl2: "#A37B00", 
+        sl1: "#ff902f", 
+        sl2: "#ff902f", 
         bs1: "#FFD369",
         bs2: "#FAC741", 
         ic1: "#FFEEC2"

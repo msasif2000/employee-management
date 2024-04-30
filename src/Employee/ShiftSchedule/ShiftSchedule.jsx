@@ -79,16 +79,16 @@ const ShftSchedule = () => {
                         </select>
                     </div>
                     <div className="w-full h-12 relative">
-                        <label htmlFor="deptName" className="block text-sm font-semibold text-txt1 absolute pl-2">From</label>
+                        <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700 absolute pl-2">From</label>
                         <input type="date" name="deptName" id="deptName" required className="w-full border rounded-lg p-2 h-full" />
                     </div>
 
                     <div className="w-full h-12 relative">
-                        <label htmlFor="deptName" className="block text-sm font-semibold text-txt1 absolute pl-2">To</label>
+                        <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700 absolute pl-2">To</label>
                         <input type="date" name="deptName" id="deptName" placeholder="To" required className="w-full border rounded-lg p-2 h-full" />
                     </div>
                     <div className="h-12">
-                        <button type="submit" className="bg-bs2 hover:bg-bg1 font-bold py-2 px-4 rounded-lg h-full">Search</button>
+                        <button type="submit" className="bg-[#55ce63] text-white font-bold py-2 px-4 rounded-lg h-full">Search</button>
                     </div>
                 </form>
             </div>
@@ -102,7 +102,7 @@ const ShftSchedule = () => {
                     <table className="table min-w-full divide-y divide-red-500 ">
                         {/* head */}
                         <thead>
-                            <tr className="bg-bg1 text-sm font-bold text-center">
+                            <tr className="bg-white text-sm font-bold text-black">
                                 <th>SCHEDULED SHIFT</th>
                                 <th>SAT 4</th>
                                 <th>SUN 5</th>
@@ -116,23 +116,23 @@ const ShftSchedule = () => {
                         {/* body */}
                         <tbody>
                             {timeSheet?.map((tmsh, index) => (
-                                <tr key={tmsh.id} className={index % 2 === 0 ? 'bg-ic1' : 'bg-bg1'}>
+                                <tr key={tmsh.id} className={index % 2 === 0 ? '' : 'bg-white'}>
                                     <td style={{ whiteSpace: 'nowrap' }} className="flex items-center gap-1">
                                         <img src={tmsh?.image} alt="" className="h-12 w-12 rounded-full" />
                                         <span className="text-base font-bold w-full pr-1">{tmsh.name}</span>
-                                        <span className="text-txt1">{tmsh?.dsgn}</span>
+                                        <span className="text-slate-700">{tmsh?.dsgn}</span>
                                     </td>
                                     <td >
                                         {
                                             tmsh?.shfts[0]?.date1.length > 0 ? (
-                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-txt2">
+                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-black">
                                                     <p className="flex gap-1"><span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[0]?.st}</span> - <span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[0]?.et}</span></p>
                                                     <p style={{ whiteSpace: 'nowrap' }}>{tmsh?.project}</p>
                                                 </div>
                                             ) :
                                                 (
                                                     <div onClick={openModal} className="flex justify-center mx-auto">
-                                                        <span className="p-1 border-2 border-dashed border-txt2"><BiPlus className="text-xl" /></span>
+                                                        <span className="p-1 border-2 border-dashed border-black"><BiPlus className="text-xl" /></span>
                                                     </div>
                                                 )
                                         }
@@ -140,14 +140,14 @@ const ShftSchedule = () => {
                                     <td >
                                         {
                                             tmsh?.shfts[1]?.date2.length > 0 ? (
-                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-txt2">
+                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-black">
                                                     <p className="flex gap-1"><span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[1]?.st}</span> - <span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[1]?.et}</span></p>
                                                     <p style={{ whiteSpace: 'nowrap' }}>{tmsh?.project}</p>
                                                 </div>
                                             ) :
                                                 (
                                                     <div onClick={openModal} className="flex justify-center mx-auto">
-                                                        <span className="p-1 border-2 border-dashed border-txt2"><BiPlus className="text-xl" /></span>
+                                                        <span className="p-1 border-2 border-dashed border-black"><BiPlus className="text-xl" /></span>
                                                     </div>
                                                 )
                                         }
@@ -155,14 +155,14 @@ const ShftSchedule = () => {
                                     <td >
                                         {
                                             tmsh?.shfts[2]?.date3.length > 0 ? (
-                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-txt2">
+                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-black">
                                                     <p className="flex gap-1"><span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[2]?.st}</span> - <span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[2]?.et}</span></p>
                                                     <p style={{ whiteSpace: 'nowrap' }}>{tmsh?.project}</p>
                                                 </div>
                                             ) :
                                                 (
                                                     <div onClick={openModal} className="flex justify-center mx-auto">
-                                                        <span className="p-1 border-2 border-dashed border-txt2"><BiPlus className="text-xl" /></span>
+                                                        <span className="p-1 border-2 border-dashed border-black"><BiPlus className="text-xl" /></span>
                                                     </div>
                                                 )
                                         }
@@ -170,14 +170,14 @@ const ShftSchedule = () => {
                                     <td >
                                         {
                                             tmsh?.shfts[3]?.date4.length > 0 ? (
-                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-txt2">
+                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-black">
                                                     <p className="flex gap-1"><span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[3]?.st}</span> - <span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[3]?.et}</span></p>
                                                     <p style={{ whiteSpace: 'nowrap' }}>{tmsh?.project}</p>
                                                 </div>
                                             ) :
                                                 (
                                                     <div onClick={openModal} className="flex justify-center mx-auto">
-                                                        <span className="p-1 border-2 border-dashed border-txt2"><BiPlus className="text-xl" /></span>
+                                                        <span className="p-1 border-2 border-dashed border-black"><BiPlus className="text-xl" /></span>
                                                     </div>
                                                 )
                                         }
@@ -185,14 +185,14 @@ const ShftSchedule = () => {
                                     <td >
                                         {
                                             tmsh?.shfts[4]?.date5.length > 0 ? (
-                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-txt2">
+                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-black">
                                                     <p className="flex gap-1"><span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[4]?.st}</span> - <span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[4]?.et}</span></p>
                                                     <p style={{ whiteSpace: 'nowrap' }}>{tmsh?.project}</p>
                                                 </div>
                                             ) :
                                                 (
                                                     <div onClick={openModal} className="flex justify-center mx-auto">
-                                                        <span className="p-1 border-2 border-dashed border-txt2"><BiPlus className="text-xl" /></span>
+                                                        <span className="p-1 border-2 border-dashed border-black"><BiPlus className="text-xl" /></span>
                                                     </div>
                                                 )
                                         }
@@ -200,14 +200,14 @@ const ShftSchedule = () => {
                                     <td >
                                         {
                                             tmsh?.shfts[5]?.date6.length > 0 ? (
-                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-txt2">
+                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-black">
                                                     <p className="flex gap-1"><span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[5]?.st}</span> - <span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[5]?.et}</span></p>
                                                     <p style={{ whiteSpace: 'nowrap' }}>{tmsh?.project}</p>
                                                 </div>
                                             ) :
                                                 (
                                                     <div onClick={openModal} className="flex justify-center mx-auto">
-                                                        <span className="p-1 border-2 border-dashed border-txt2"><BiPlus className="text-xl" /></span>
+                                                        <span className="p-1 border-2 border-dashed border-black"><BiPlus className="text-xl" /></span>
                                                     </div>
                                                 )
                                         }
@@ -215,14 +215,14 @@ const ShftSchedule = () => {
                                     <td >
                                         {
                                             tmsh?.shfts[6]?.date7.length > 0 ? (
-                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-txt2">
+                                                <div onClick={openModal2} className="p-1 border-2 border-dashed border-black">
                                                     <p className="flex gap-1"><span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[6]?.st}</span> - <span style={{ whiteSpace: 'nowrap' }}>{tmsh?.shfts[6]?.et}</span></p>
                                                     <p style={{ whiteSpace: 'nowrap' }}>{tmsh?.project}</p>
                                                 </div>
                                             ) :
                                                 (
                                                     <div onClick={openModal} className="flex justify-center mx-auto">
-                                                        <span className="p-1 border-2 border-dashed border-txt2"><BiPlus className="text-xl" /></span>
+                                                        <span className="p-1 border-2 border-dashed border-black"><BiPlus className="text-xl" /></span>
                                                     </div>
                                                 )
                                         }
@@ -237,9 +237,9 @@ const ShftSchedule = () => {
             {/* Add Department Modal */}
             {isModalOpen && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Assign Shift</h2>
+                            <h2 className="text-2xl font-bold text-black">Assign Shift</h2>
                             <a href="#close" onClick={closeModal}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -249,7 +249,7 @@ const ShftSchedule = () => {
                         <form className="mt-4">
                             <div className="flex gap-8">
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Department</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Department</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">IT Infrastructure</option>
@@ -259,7 +259,7 @@ const ShftSchedule = () => {
                                     </select>
                                 </div>
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Select Employee</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Select Employee</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">John Maya</option>
@@ -271,11 +271,11 @@ const ShftSchedule = () => {
                             </div>
                             <div className="flex gap-8 mt-4">
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Date</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Date</label>
                                     <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Shfts</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Shfts</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">10:30 Shift</option>
@@ -286,34 +286,34 @@ const ShftSchedule = () => {
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Min Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Min Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Max Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Max Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Min End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Min End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Max End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Max End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="w-1/2 mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Break Time</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Break Time</label>
                                 <input type="time" name="deptName" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
 
@@ -340,9 +340,9 @@ const ShftSchedule = () => {
             {/* Add Department Modal */}
             {isModalOpen2 && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Edit Shift</h2>
+                            <h2 className="text-2xl font-bold text-black">Edit Shift</h2>
                             <a href="#close" onClick={closeModal2}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -352,7 +352,7 @@ const ShftSchedule = () => {
                         <form className="mt-4">
                             <div className="flex gap-8">
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Department</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Department</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">IT Infrastructure</option>
@@ -362,7 +362,7 @@ const ShftSchedule = () => {
                                     </select>
                                 </div>
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Select Employee</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Select Employee</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">John Maya</option>
@@ -374,11 +374,11 @@ const ShftSchedule = () => {
                             </div>
                             <div className="flex gap-8 mt-4">
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Date</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Date</label>
                                     <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Shfts</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Shfts</label>
                                     <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                         <option value="">Select</option>
                                         <option value="1">10:30 Shift</option>
@@ -389,34 +389,34 @@ const ShftSchedule = () => {
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Min Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Min Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Max Start Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Max Start Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Min End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Min End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                                 <div className="w-full mt-4">
-                                    <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Max End Time</label>
+                                    <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Max End Time</label>
                                     <input type="time" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                                 </div>
                             </div>
                             <div className="w-1/2 mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Break Time</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Break Time</label>
                                 <input type="time" name="deptName" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
 
@@ -443,9 +443,9 @@ const ShftSchedule = () => {
             {/* Edit  Modal */}
             {editModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 w-1/3 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 w-1/3 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Edit Department</h2>
+                            <h2 className="text-2xl font-bold text-black">Edit Department</h2>
                             <a href="#close" onClick={closeEditModal}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -454,7 +454,7 @@ const ShftSchedule = () => {
                         </div>
                         <form className="mt-4">
                             <div className="mb-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Select Employee</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Select Employee</label>
                                 <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                     <option value="">Select</option>
                                     <option value="1">IT Infrastructure</option>
@@ -464,16 +464,16 @@ const ShftSchedule = () => {
                                 </select>
                             </div>
                             <div className="w-full mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Overtime Date</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Overtime Date</label>
                                 <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="w-full mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Overtime Hours</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Overtime Hours</label>
                                 <input type="text" name="deptName" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
 
                             <div className="mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Description</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Description</label>
                                 <textarea name="desc" id="desc" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="flex justify-center mt-4">
@@ -487,9 +487,9 @@ const ShftSchedule = () => {
             {/* Delete Department Modal */}
             {deleteModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 w-1/3 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 w-1/3 rounded-lg">
                         <div className="">
-                            <h2 className="text-2xl font-bold text-txt2">Delete Overtime?</h2>
+                            <h2 className="text-2xl font-bold text-black">Delete Overtime?</h2>
                             <div className="flex items-center justify-center gap-12 pt-8">
                                 <a href="#close" onClick={closeDeleteModal}>
                                     <button className="btn btn-sm bg-white border-1 border-bs2 hover:bg-sl1 hover:text-white">Delete</button>

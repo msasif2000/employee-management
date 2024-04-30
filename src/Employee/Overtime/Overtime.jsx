@@ -56,19 +56,19 @@ const Overtime = () => {
             </div>
 
             <div className="flex items-center justify-evenly gap-8 text-xl mt-4">
-                <div className="bg-bs2 p-4 w-full">
+                <div className="bg-white p-4 w-full">
                     <h3>Overtime Employee</h3>
                     <p><span className="font-bold">20</span> <span className="text-sm">this month</span></p>
                 </div>
-                <div className="bg-bs2 p-4 w-full">
+                <div className="bg-white p-4 w-full">
                     <h3>Overtime Hours</h3>
                     <p><span className="font-bold">118</span> <span className="text-sm">this month</span></p>
                 </div>
-                <div className="bg-bs2 p-4 w-full">
+                <div className="bg-white p-4 w-full">
                     <h3>Pending Request</h3>
                     <p><span className="font-bold">24</span></p>
                 </div>
-                <div className="bg-bs2 p-4 w-full">
+                <div className="bg-white p-4 w-full">
                     <h3>Rejected</h3>
                     <p><span className="font-bold">5</span></p>
                 </div>
@@ -83,7 +83,7 @@ const Overtime = () => {
                     <table className="table min-w-full divide-y divide-red-500 ">
                         {/* head */}
                         <thead>
-                            <tr className="bg-bg1 text-sm font-bold">
+                            <tr className="bg-white text-sm font-bold text-black">
                                 <th>#</th>
                                 <th>NAME</th>
                                 <th>OT DATE</th>
@@ -98,7 +98,7 @@ const Overtime = () => {
                         {/* body */}
                         <tbody>
                             {overTime?.map((tmsh, index) => (
-                                <tr key={tmsh.id} className={index % 2 === 0 ? 'bg-ic1' : 'bg-bg1'}>
+                                <tr key={tmsh.id} className={index % 2 === 0 ? '' : 'bg-white'}>
                                     <td>{tmsh.id}</td>
                                     <td style={{ whiteSpace: 'nowrap' }} className="flex items-center gap-1">
                                         <img src={tmsh?.image} alt="" className="h-12 w-12 rounded-full" />
@@ -126,8 +126,8 @@ const Overtime = () => {
                                             {showMenu === index && (
                                                 <div className="absolute right-12 bg-white rounded-md shadow-lg origin-top-right ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                                        <a href="#edit-tmsh" onClick={openEditModal} className="block px-4 py-2 text-sm text-gray-700 hover:bg-ic1" role="menuitem">Edit</a>
-                                                        <a href="#delete-tmsh" onClick={openDeleteModal} className="block px-4 py-2 text-sm text-gray-700 hover:bg-ic1" role="menuitem">Delete</a>
+                                                        <a href="#edit-tmsh" onClick={openEditModal} className="block px-4 py-2 text-sm text-gray-700 " role="menuitem">Edit</a>
+                                                        <a href="#delete-tmsh" onClick={openDeleteModal} className="block px-4 py-2 text-sm text-gray-700 " role="menuitem">Delete</a>
                                                     </div>
                                                 </div>
                                             )}
@@ -143,9 +143,9 @@ const Overtime = () => {
             {/* Add Department Modal */}
             {isModalOpen && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 w-1/3 p-8 rounded-lg">
+                    <div className="bg-[#ece8e8] w-1/3 p-8 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Add Overtime</h2>
+                            <h2 className="text-2xl font-bold text-black">Add Overtime</h2>
                             <a href="#close" onClick={closeModal}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -154,7 +154,7 @@ const Overtime = () => {
                         </div>
                         <form className="mt-4">
                             <div className="mb-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Select Employee</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Select Employee</label>
                                 <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                     <option value="">Select</option>
                                     <option value="1">IT Infrastructure</option>
@@ -164,16 +164,16 @@ const Overtime = () => {
                                 </select>
                             </div>
                             <div className="w-full mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Overtime Date</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Overtime Date</label>
                                 <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="w-full mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Overtime Hours</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Overtime Hours</label>
                                 <input type="text" name="deptName" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
 
                             <div className="mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Description</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Description</label>
                                 <textarea name="desc" id="desc" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="flex justify-center mt-4">
@@ -186,9 +186,9 @@ const Overtime = () => {
             {/* Edit  Modal */}
             {editModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 w-1/3 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 w-1/3 rounded-lg">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Edit Department</h2>
+                            <h2 className="text-2xl font-bold text-black">Edit Department</h2>
                             <a href="#close" onClick={closeEditModal}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -197,7 +197,7 @@ const Overtime = () => {
                         </div>
                         <form className="mt-4">
                             <div className="mb-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Select Employee</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Select Employee</label>
                                 <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
                                     <option value="">Select</option>
                                     <option value="1">IT Infrastructure</option>
@@ -207,16 +207,16 @@ const Overtime = () => {
                                 </select>
                             </div>
                             <div className="w-full mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Overtime Date</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Overtime Date</label>
                                 <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="w-full mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Overtime Hours</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Overtime Hours</label>
                                 <input type="text" name="deptName" id="deptName" defaultValue={editDept} required className="w-full border rounded-lg p-2" />
                             </div>
 
                             <div className="mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Description</label>
+                                <label htmlFor="deptName" className="block text-sm font-semibold text-slate-700">Description</label>
                                 <textarea name="desc" id="desc" required className="w-full border rounded-lg p-2" />
                             </div>
                             <div className="flex justify-center mt-4">
@@ -230,9 +230,9 @@ const Overtime = () => {
             {/* Delete Department Modal */}
             {deleteModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 p-8 w-1/3 rounded-lg">
+                    <div className="bg-[#ece8e8] p-8 w-1/3 rounded-lg">
                         <div className="">
-                            <h2 className="text-2xl font-bold text-txt2">Delete Overtime?</h2>
+                            <h2 className="text-2xl font-bold text-black">Delete Overtime?</h2>
                             <div className="flex items-center justify-center gap-12 pt-8">
                                 <a href="#close" onClick={closeDeleteModal}>
                                     <button className="btn btn-sm bg-white border-1 border-bs2 hover:bg-sl1 hover:text-white">Delete</button>
