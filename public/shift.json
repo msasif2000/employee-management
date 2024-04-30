@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+      "name": "10:30 shift",
+      "mst": "06:00 am",
+      "st": "10:30 am",
+      "mxs": "11:00 am",
+      "met": "02:00 pm",
+      "et": "04:30 pm",
+      "mxe": "06:30 pm",
+      "bt": "30 mins"
+    },
+    {
+        "id": 2,
+      "name": "Daily Rout",
+      "mst": "08:00 am",
+      "st": "09:00 am",
+      "mxs": "09:30 am",
+      "met": "01:00 pm",
+      "et": "05:00 pm",
+      "mxe": "06:00 pm",
+      "bt": "45 mins"
+    },
+    {
+        "id": 3,
+      "name": "New Shift",
+      "mst": "07:30 am",
+      "st": "08:00 am",
+      "mxs": "09:00 am",
+      "met": "12:00 pm",
+      "et": "03:00 pm",
+      "mxe": "05:30 pm",
+      "bt": "1 hour"
+    }
+  ]

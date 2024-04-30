@@ -12,6 +12,7 @@ import Designation from './Employee/Designation/Designation.jsx';
 import TimeSheet from './Employee/TimeSheet/TimeSheet.jsx';
 import ShiftSchedule from './Employee/ShiftSchedule/ShiftSchedule.jsx';
 import Overtime from './Employee/Overtime/Overtime.jsx';
+import Shifts from './Employee/ShiftSchedule/Shifts.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/overtime",
         element: <Overtime />,
+      },
+      {
+        path: "/dashboard/shifts", 
+        element: <Shifts/>
       }
     ]
   }

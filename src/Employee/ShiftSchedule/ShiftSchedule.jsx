@@ -2,26 +2,25 @@ import { BiPlus } from "react-icons/bi";
 import { useEffect, useState } from "react";
 import DashHeader from "../../Components/DashHeader/DashHeader";
 import DataNumber from "../../Components/DataNumber/DataNumber";
+import { useNavigate } from "react-router-dom";
 
 const ShftSchedule = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [isModalOpen2, setIsModalOpen2] = useState(false);
     const [editModal, setEditModal] = useState(false);
     const [deleteModal, setDeleteModal] = useState(false);
     const [timeSheet, setTimeSheet] = useState([]);
 
+    const navigate = useNavigate();
     const openModal = () => {
         setIsModalOpen(true);
     };
     const closeModal = () => {
         setIsModalOpen(false);
     };
-    const openModal2 = () => {
-        setIsModalOpen2(true);
-    };
-    const closeModal2 = () => {
-        setIsModalOpen2(false);
-    };
+     const handleShift =() => {
+        navigate("/dashboard/shifts")
+     }
+
 
     const closeEditModal = () => {
         setEditModal(false);
@@ -52,7 +51,7 @@ const ShftSchedule = () => {
                     <a href="#dept-modal" onClick={openModal}>
                         <button className="bg-sl1 hover:bg-sl2 text-white font-bold py-2 px-4 rounded-lg">Assign Shfts</button>
                     </a>
-                    <a href="#shift-modal" onClick={openModal2}>
+                    <a onClick={handleShift}>
                         <button className="bg-sl1 hover:bg-sl2 text-white font-bold py-2 px-4 rounded-lg">Shfts</button>
                     </a>
                 </div>
@@ -331,50 +330,9 @@ const ShftSchedule = () => {
                 </div>
             )}
 
-            {isModalOpen2 && (
-                <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-ic1 w-1/3 p-8 rounded-lg">
-                        <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold text-txt2">Add Overtime</h2>
-                            <a href="#close" onClick={closeModal2}>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </a>
-                        </div>
-                        <form className="mt-4">
-                            <div className="mb-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Select Employee</label>
-                                <select name="deptName" id="deptName" required className="w-full border rounded-lg p-2">
-                                    <option value="">Select</option>
-                                    <option value="1">IT Infrastructure</option>
-                                    <option value="2">Network Security</option>
-                                    <option value="3">Mobile App Development</option>
-                                    <option value="4">Data Analysis Platform</option>
-                                </select>
-                            </div>
-                            <div className="w-full mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Overtime Date</label>
-                                <input type="date" name="deadline" id="deptName" required className="w-full border rounded-lg p-2" />
-                            </div>
-                            <div className="w-full mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Overtime Hours</label>
-                                <input type="text" name="deptName" id="deptName" required className="w-full border rounded-lg p-2" />
-                            </div>
+         
 
-                            <div className="mt-4">
-                                <label htmlFor="deptName" className="block text-sm font-semibold text-txt1">Description</label>
-                                <textarea name="desc" id="desc" required className="w-full border rounded-lg p-2" />
-                            </div>
-                            <div className="flex justify-center mt-4">
-                                <button type="submit" className="bg-sl1 hover:bg-sl2 text-white font-bold py-2 px-4 rounded-lg">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            )}
-
-            {/* Edit Department Modal */}
+            {/* Edit  Modal */}
             {editModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="bg-ic1 p-8 w-1/3 rounded-lg">
